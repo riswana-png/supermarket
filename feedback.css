@@ -1,0 +1,195 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #242627;
+    background: url(assets/d.png.jpg);
+    background-size: contain;
+    height: min-content;
+}
+
+header {
+    background-color: #670f57;
+    color: #e5ebef;
+    padding: 10px 0;
+}
+
+nav .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f1f4f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.feedback-section {
+    background-color: #e397dc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.feedback-section h2 {
+    margin-bottom: 10px;
+}
+
+.feedback-section p {
+    margin-bottom: 20px;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-section input, 
+.feedback-section textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #4d0443;
+    border-radius: 6px;
+}
+
+.feedback-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #650c59;
+    color: #f1f0f0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.feedback-section button:hover {
+    background-color: #1af734;
+}
+
+footer {
+    width: 100%;
+    background-color: #490544;
+    color: #f4efef;
+     margin-top: 50px; 
+    padding: 10px;
+   
+}
+
+footer .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   
+}
+
+
+/* Existing styles remain unchanged */
+
+/* Add transitions to buttons and input fields for smooth effects */
+.feedback-section input, 
+.feedback-section textarea,
+.feedback-section button {
+    transition: all 0.3s ease;
+}
+
+/* Add hover effect to inputs */
+.feedback-section input:hover, 
+.feedback-section textarea:hover {
+    border-color: #650c59;
+    box-shadow: 0 0 10px rgba(101, 12, 89, 0.5);
+}
+
+/* Button hover effect */
+.feedback-section button:hover {
+    background-color: #1af734;
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Fade-in animation for feedback section */
+.feedback-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth scrolling for anchor links (optional) */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Add transitions for nav links */
+nav ul li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Scale effect on hover for nav links */
+nav ul li a:hover {
+    color: #e28cf1; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+/* Fade-in animation for the nav menu */
+nav {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInNav 0.5s forwards;
+}
+
+/* Keyframes for fade-in animation of the nav menu */
+@keyframes fadeInNav {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar{
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: 80px;
+    background-color:green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    color: white;
+}
+
+a{
+    text-decoration: bold;
+}
+.Nav_menus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 42%;
+    height: 100%;
+}
+.menus{
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: violet; */
+    color: white;
+    border-radius: 5px;
+}
+.menus:hover{
+    background-color: #122011;
+}
+/* Section Styles */
+.Home_Section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container for Products */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Product Card Styles *//* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: 80px;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: white;
+}
+
+a {
+    text-decoration: bold;
+}
+
+.Nav_menus {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 42%;
+    height: 100%;
+}
+
+.menus {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.menus:hover {
+    background-color: #122011;
+}
+
+/* Section Styles */
+.Home_Section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container for Products */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Product Grid */
+.product-grid {
+    width: 100%;
+    display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: auto;
+margin-top: 50px;
+}
+
+/* Product Card Styles */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    min-height: 350px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content inside the card */
+    padding: 10px;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    mix-blend-mode: multiply;
+}
+
+.product-details {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.product-price, .product-quantity {
+    font-size: 1rem;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls .btn {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-controls .btn:hover {
+    background-color: #0056b3;
+}
+
+.quantity-controls span {
+    margin: 0 10px;
+}
+
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-details {
+    text-align: left;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.product-price, .product-quantity {
+    font-size: 1rem;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
